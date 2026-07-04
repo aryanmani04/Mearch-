@@ -36,4 +36,4 @@ npm run dev
 
 ## Status
 
-Actively being built and tweaked — expect rough edges. Auth is currently just a UI shell (no real accounts yet), and there's more polish to come around animations and empty states.
+Actively being built and tweaked. signup login  is currently just a UI shell , there's more polish to come around animations and empty states.
