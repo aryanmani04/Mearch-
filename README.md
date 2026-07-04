@@ -1,16 +1,39 @@
-# React + Vite
+# Mearch
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A movie discovery app built with React + Vite, powered by the TMDB API.
 
-Currently, two official plugins are available:
+This is my first real project after learning JavaScript and React fundamentals — components, hooks, state, routing, and working with a real external API. I wanted something I'd actually use, not just a tutorial clone.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What it does
 
-## React Compiler
+- Browse trending and popular movies, with a rotating hero section on the homepage
+- Search TMDB's full catalog, with infinite scroll instead of pagination
+- Save movies to a **Watchlist** or **Favourites**, both persisted locally
+- Hover any movie card for a glassy overlay with the full description, genres, and rating
+- Toast confirmations whenever you add or remove something
+- A login/signup screen (UI only for now — no real backend yet)
+- Scroll-to-top button, focus states, and small animations throughout
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Stack
 
-## Expanding the ESLint configuration
+React, React Router, Tailwind CSS, TMDB API, lucide-react icons.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Setup
+
+```
+npm install
+```
+
+Add a `.env` file in the project root:
+
+```
+VITE_TMDB_API_KEY=your_key_here
+```
+
+```
+npm run dev
+```
+
+## Status
+
+Actively being built and tweaked — expect rough edges. Auth is currently just a UI shell (no real accounts yet), and there's more polish to come around animations and empty states.
