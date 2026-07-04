@@ -36,7 +36,7 @@ const Hero = () => {
 
   if (featured.length === 0) {
     return (
-      <div className="px-6 pt-10 pb-6">
+      <div className="px-4 sm:px-6 pt-10 pb-6">
         <h1 className="text-3xl font-bold text-white">Trending This Week</h1>
         <p className="text-zinc-400 mt-1">Discover what everyone's watching right now.</p>
       </div>
@@ -62,16 +62,16 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/20 to-transparent" />
 
-      <div className="relative z-10 h-full flex flex-col justify-end px-6 md:px-10 pb-10 max-w-2xl">
-        <span className="text-xs uppercase tracking-widest text-red-400 font-semibold mb-3">
+      <div className="relative z-10 h-full flex flex-col justify-end px-4 sm:px-6 md:px-10 pb-8 sm:pb-10 max-w-2xl">
+        <span className="text-xs uppercase tracking-widest text-red-400 font-semibold mb-2 sm:mb-3">
           Trending This Week
         </span>
 
-        <h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg mb-3 transition-all duration-500">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white drop-shadow-lg mb-3 transition-all duration-500">
           {movie.title}
         </h1>
 
-        <div className="flex items-center gap-3 mb-4">
+        <div className="flex items-center flex-wrap gap-2 sm:gap-3 mb-4">
           <div className="flex items-center gap-1 px-2.5 py-1 rounded-full bg-black/50 backdrop-blur-md border border-white/10">
             <Star size={14} className="text-yellow-400" fill="currentColor" />
             <span className="text-xs font-semibold text-white">{movie.rating}</span>
@@ -91,7 +91,7 @@ const Hero = () => {
           {movie.overview}
         </p>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center flex-wrap gap-3">
           <button
             onClick={() => toggleWatchlist(movie)}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg font-semibold text-sm cursor-pointer transition-colors duration-200 ${
@@ -105,7 +105,7 @@ const Hero = () => {
           </button>
 
           {featured.length > 1 && (
-            <div className="flex gap-1.5 ml-2">
+            <div className="flex gap-1.5 ml-0 sm:ml-2">
               {featured.map((_, i) => (
                 <button
                   key={i}

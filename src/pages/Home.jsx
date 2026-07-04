@@ -79,7 +79,7 @@ const Home = () => {
     <div className="min-h-screen">
       {!searchQuery.trim() && <Hero />}
 
-      <div className="px-6 pt-8">
+      <div className="px-4 sm:px-6 pt-8">
         <h2 className="text-2xl font-bold text-white">
           {searchQuery.trim() ? `Results for "${searchQuery}"` : "Popular Movies"}
         </h2>

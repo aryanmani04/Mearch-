@@ -8,7 +8,7 @@ const Card = ({ movie }) => {
   const inWatchlist = isInWatchlist(movie.id);
 
   return (
-    <div className="relative w-64 m-6 rounded-2xl group">
+    <div className="relative w-[45vw] max-w-64 sm:w-64 m-2.5 sm:m-6 rounded-2xl group">
       <div className="relative backdrop-blur-xl bg-zinc-900/40 border border-white/10 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-white/20">
         <div className="relative h-80 overflow-hidden">
           <img

@@ -6,7 +6,7 @@ const Watchlist = () => {
 
   return (
     <div className="min-h-screen">
-      <div className="px-6 pt-6">
+      <div className="px-4 sm:px-6 pt-6">
         <h1 className="text-2xl font-bold text-white">Your Watchlist</h1>
       </div>
 
